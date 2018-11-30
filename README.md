@@ -2,7 +2,7 @@
 An example of how to use CloudKit and Core Data together with bi-directional sync across a user's devices. The Example App contains a database of iBeacons that can be placed on a map and simulate broadcasting.
 
 # Installation
-Clone the respository.
+Clone or Dowload the respository.
 
 Note: This example is already connected to a Database and has existing sample data. If you choose to use your own Cloudkit Database you will need to change the Bundle Identifier to an account you have control over. Since this will be an empty database you will need to create the appropriate Records and Fields. This example defines a "Beacon" and "Place" record and a query index on "RecordName"
 
