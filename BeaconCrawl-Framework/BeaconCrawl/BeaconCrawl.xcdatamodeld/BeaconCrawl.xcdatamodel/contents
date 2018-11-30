@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14308.2" systemVersion="18A336e" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Adventure" representedClassName="AdventureMO" syncable="YES">
+        <attribute name="accuracy" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currentDistance" optional="YES" attributeType="Double" defaultValueString="-71" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="data" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="descriptiveText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="imageData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="isEnabled" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isVisible" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordChangeTag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordID" attributeType="Transformable" customClassName="CKRecordID" syncable="YES"/>
+        <attribute name="recordName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="street" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tags" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zip" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="descriptions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AdventureDescription" inverseName="adventure" inverseEntity="AdventureDescription" syncable="YES"/>
+        <relationship name="gameZone" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GameZone" inverseName="adventure" inverseEntity="GameZone" syncable="YES"/>
+        <relationship name="webArchive" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WebArchive" inverseName="adventures" inverseEntity="WebArchive" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="recordID"/>
+                <constraint value="recordName"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="AdventureDescription" representedClassName="AdventureDescriptionMO" syncable="YES">
+        <attribute name="captionText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="data" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="descriptiveText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasImage" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="imageData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="recordChangeTag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordID" optional="YES" attributeType="Transformable" customClassName="CKRecordID" syncable="YES"/>
+        <attribute name="recordName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="titleText" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="adventure" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Adventure" inverseName="descriptions" inverseEntity="Adventure" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="recordID"/>
+                <constraint value="recordName"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Base" representedClassName="BaseMO" syncable="YES">
+        <attribute name="data" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordChangeTag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordID" optional="YES" attributeType="Transformable" customClassName="CKRecordID" syncable="YES"/>
+        <attribute name="recordName" optional="YES" attributeType="String" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="recordID"/>
+                <constraint value="recordName"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Beacon" representedClassName="BeaconMO" syncable="YES">
+        <attribute name="accuracy" optional="YES" attributeType="Double" minValueString="0.1" maxValueString="90" defaultValueString="30" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="currentDistance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="data" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="imageData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="major" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="minor" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordChangeTag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordID" attributeType="Transformable" customClassName="CKRecordID" syncable="YES"/>
+        <attribute name="recordName" attributeType="String" valueTransformerName="" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="recordID"/>
+                <constraint value="recordName"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Game" representedClassName="GameMO" syncable="YES">
+        <attribute name="adventure" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="beaconState" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="data" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="gameState" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isFavorite" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="path" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="placeState" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordChangeTag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordID" optional="YES" attributeType="Transformable" customClassName="CKRecordID" syncable="YES"/>
+        <attribute name="recordName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="gameShare" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="GameShare" inverseName="game" inverseEntity="GameShare" syncable="YES"/>
+        <relationship name="gameZone" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GameZone" inverseName="game" inverseEntity="GameZone" syncable="YES"/>
+        <relationship name="message" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="GameMessage" inverseName="game" inverseEntity="GameMessage" syncable="YES"/>
+        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Photo" inverseName="game" inverseEntity="Photo" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="recordID"/>
+                <constraint value="recordName"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="GameMessage" representedClassName="GameMessageMO" syncable="YES">
+        <attribute name="data" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordChangeTag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordID" optional="YES" attributeType="Transformable" customClassName="CKRecordID" syncable="YES"/>
+        <attribute name="recordName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="string" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="game" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Game" inverseName="message" inverseEntity="Game" syncable="YES"/>
+        <relationship name="recipients" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Users" inverseName="messageRecieved" inverseEntity="Users" syncable="YES"/>
+        <relationship name="sender" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Users" inverseName="messageSent" inverseEntity="Users" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="recordID"/>
+                <constraint value="recordName"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="GameShare" representedClassName="GameShareMO" syncable="YES">
+        <attribute name="adventureRecordName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="data" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" customClassName=".CKDatabase" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordChangeTag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordID" optional="YES" attributeType="Transformable" customClassName="CKRecordID" syncable="YES"/>
+        <attribute name="recordName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="game" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Game" inverseName="gameShare" inverseEntity="Game" syncable="YES"/>
+        <relationship name="share" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Share" inverseName="gameShare" inverseEntity="Share" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="recordID"/>
+                <constraint value="recordName"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="GameZone" representedClassName="GameZoneMO" syncable="YES">
+        <attribute name="recordChangeTag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordZoneID" optional="YES" attributeType="Transformable" customClassName="CKRecordZoneID" syncable="YES"/>
+        <attribute name="serverChangeToken" optional="YES" attributeType="Transformable" customClassName="CKServerChangeToken" syncable="YES"/>
+        <relationship name="adventure" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Adventure" inverseName="gameZone" inverseEntity="Adventure" syncable="YES"/>
+        <relationship name="game" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Game" inverseName="gameZone" inverseEntity="Game" syncable="YES"/>
+    </entity>
+    <entity name="Photo" representedClassName="PhotoMO" syncable="YES">
+        <attribute name="captionText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="data" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="descriptiveText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="recordChangeTag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordID" optional="YES" attributeType="Transformable" customClassName="CKRecordID" syncable="YES"/>
+        <attribute name="recordName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbnailData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="titleText" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="game" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Game" inverseName="photos" inverseEntity="Game" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Users" inverseName="photos" inverseEntity="Users" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="recordID"/>
+                <constraint value="recordName"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Place" representedClassName="PlaceMO" syncable="YES">
+        <attribute name="accuracy" optional="YES" attributeType="Double" defaultValueString="30" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currentDistance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="data" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="descriptiveText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="major" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordChangeTag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordID" attributeType="Transformable" valueTransformerName="" customClassName="CKRecordID" syncable="YES"/>
+        <attribute name="recordName" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="street" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zip" optional="YES" attributeType="String" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="recordID"/>
+                <constraint value="recordName"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Share" representedClassName="ShareMO" syncable="YES">
+        <attribute name="data" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="imageData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="path" attributeType="String" syncable="YES"/>
+        <attribute name="publicPermission" optional="YES" attributeType="Integer 16" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="recordChangeTag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordID" optional="YES" attributeType="Transformable" customClassName="CKRecordID" syncable="YES"/>
+        <attribute name="recordName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="gameShare" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="GameShare" inverseName="share" inverseEntity="GameShare" syncable="YES"/>
+        <relationship name="participants" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ShareParticipant" inverseName="share" inverseEntity="ShareParticipant" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="recordID"/>
+                <constraint value="recordName"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="ShareParticipant" representedClassName="ShareParticipantMO" syncable="YES">
+        <attribute name="acceptanceStatus" optional="YES" attributeType="Integer 16" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="participantID" attributeType="Transformable" customClassName="CKRecordID" syncable="YES"/>
+        <attribute name="permission" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="recordChangeTag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="share" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Share" inverseName="participants" inverseEntity="Share" syncable="YES"/>
+    </entity>
+    <entity name="Users" representedClassName="UserMO" syncable="YES">
+        <attribute name="about" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="birthday" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="data" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="details" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="familyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="givenName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="isDeveloper" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="occupation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordChangeTag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordID" optional="YES" attributeType="Transformable" customClassName="CKRecordID" syncable="YES"/>
+        <attribute name="recordName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbnailData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <relationship name="messageRecieved" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GameMessage" inverseName="recipients" inverseEntity="GameMessage" syncable="YES"/>
+        <relationship name="messageSent" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="GameMessage" inverseName="sender" inverseEntity="GameMessage" syncable="YES"/>
+        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Photo" inverseName="user" inverseEntity="Photo" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="recordID"/>
+                <constraint value="recordName"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="WebArchive" representedClassName="WebArchiveMO" syncable="YES">
+        <attribute name="asset" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="data" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="fileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isRemote" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordChangeTag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordID" optional="YES" attributeType="Transformable" customClassName="CKRecordID" syncable="YES"/>
+        <attribute name="recordName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="adventures" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Adventure" inverseName="webArchive" inverseEntity="Adventure" syncable="YES"/>
+        <relationship name="webImages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WebImage" inverseName="webArchive" inverseEntity="WebImage" syncable="YES"/>
+    </entity>
+    <entity name="WebImage" representedClassName="WebImageMO" syncable="YES">
+        <attribute name="data" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordChangeTag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordID" optional="YES" attributeType="Transformable" customClassName="CKRecordID" syncable="YES"/>
+        <attribute name="recordName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="webArchive" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WebArchive" inverseName="webImages" inverseEntity="WebArchive" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="recordID"/>
+                <constraint value="recordName"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="Adventure" positionX="261" positionY="-324" width="128" height="390"/>
+        <element name="AdventureDescription" positionX="513" positionY="-243" width="128" height="225"/>
+        <element name="Base" positionX="-216" positionY="-36" width="128" height="120"/>
+        <element name="Beacon" positionX="-162" positionY="-334" width="128" height="225"/>
+        <element name="Game" positionX="495" positionY="32" width="128" height="270"/>
+        <element name="GameMessage" positionX="565" positionY="405" width="128" height="180"/>
+        <element name="GameShare" positionX="666" positionY="72" width="128" height="180"/>
+        <element name="GameZone" positionX="277" positionY="180" width="128" height="120"/>
+        <element name="Photo" positionX="304" positionY="603" width="128" height="255"/>
+        <element name="Place" positionX="45" positionY="-333" width="128" height="285"/>
+        <element name="Share" positionX="862" positionY="135" width="128" height="210"/>
+        <element name="ShareParticipant" positionX="1105" positionY="245" width="128" height="150"/>
+        <element name="Users" positionX="783" positionY="410" width="128" height="420"/>
+        <element name="WebArchive" positionX="36.59375" positionY="-0.40625" width="128" height="210"/>
+        <element name="WebImage" positionX="-173.61328125" positionY="180.40234375" width="128" height="135"/>
+    </elements>
+</model>

@@ -1,0 +1,14 @@
+//
+//  State.swift
+//  BeaconCrawl
+//
+//  Created by WCA on 2/26/17.
+//  Copyright © 2017 aurnhammer.com. All rights reserved.
+//
+
+import Foundation
+
+struct State {
+    
+    
+}

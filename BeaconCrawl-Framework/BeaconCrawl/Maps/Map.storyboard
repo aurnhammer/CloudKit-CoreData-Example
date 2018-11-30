@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GsS-xf-6N8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Beacons Map-->
+        <scene sceneID="ruh-V1-r6Z">
+            <objects>
+                <viewController storyboardIdentifier="map" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AGs-Jm-Q4K" customClass="MapViewController" customModule="BeaconCrawl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Azf-14-6Yx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" pitchEnabled="NO" showsBuildings="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izq-cL-OQV">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <connections>
+                                    <outlet property="delegate" destination="AGs-Jm-Q4K" id="rX1-wR-vCb"/>
+                                </connections>
+                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CHF-Lm-KqE">
+                                <rect key="frame" x="16" y="615" width="34" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="SCb-7n-0Hq"/>
+                                    <constraint firstAttribute="width" constant="34" id="vHZ-Nj-2Sp"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Target" translatesAutoresizingMaskIntoConstraints="NO" id="5GV-y7-r5T">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CHF-Lm-KqE" firstAttribute="leading" secondItem="Azf-14-6Yx" secondAttribute="leadingMargin" id="Uvm-uG-9F8"/>
+                            <constraint firstItem="TGd-9w-8aI" firstAttribute="trailing" secondItem="5GV-y7-r5T" secondAttribute="trailing" id="Yjt-Pb-3VX"/>
+                            <constraint firstItem="TGd-9w-8aI" firstAttribute="bottom" secondItem="izq-cL-OQV" secondAttribute="bottom" id="ZOl-vV-ySh"/>
+                            <constraint firstItem="TGd-9w-8aI" firstAttribute="bottom" secondItem="5GV-y7-r5T" secondAttribute="bottom" id="dcJ-c8-9bg"/>
+                            <constraint firstItem="5GV-y7-r5T" firstAttribute="top" secondItem="TGd-9w-8aI" secondAttribute="top" id="fJo-vU-1tS"/>
+                            <constraint firstItem="izq-cL-OQV" firstAttribute="top" secondItem="TGd-9w-8aI" secondAttribute="top" id="fgJ-IR-jcB"/>
+                            <constraint firstItem="TGd-9w-8aI" firstAttribute="bottom" secondItem="CHF-Lm-KqE" secondAttribute="bottom" constant="18" id="pl6-HJ-Vsw"/>
+                            <constraint firstItem="5GV-y7-r5T" firstAttribute="leading" secondItem="TGd-9w-8aI" secondAttribute="leading" id="sqa-cZ-m7O"/>
+                            <constraint firstItem="TGd-9w-8aI" firstAttribute="trailing" secondItem="izq-cL-OQV" secondAttribute="trailing" id="tCU-ey-nOO"/>
+                            <constraint firstItem="izq-cL-OQV" firstAttribute="leading" secondItem="TGd-9w-8aI" secondAttribute="leading" id="u7P-ZT-wcM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TGd-9w-8aI"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Beacons Map" id="EUO-Ph-KTo">
+                        <barButtonItem key="leftBarButtonItem" title="List" id="JpQ-fy-0EC">
+                            <connections>
+                                <segue destination="VCA-ax-ogE" kind="unwind" identifier="unwind" unwindAction="unwindToBeaconsViewControllerWithSegue:" id="8EW-oQ-bNj"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xXm-J7-lr8"/>
+                    </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="locationTarget" destination="5GV-y7-r5T" id="lLW-Zu-os0"/>
+                        <outlet property="mapView" destination="izq-cL-OQV" id="xyP-gX-Vuf"/>
+                        <outlet property="trackingButtonView" destination="CHF-Lm-KqE" id="18b-P8-e2c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X1Y-9T-MZc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <barButtonItem systemItem="cancel" id="M5q-s7-VpH"/>
+                <exit id="VCA-ax-ogE" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-2276" y="956.67166416791611"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pdG-ng-88h">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GsS-xf-6N8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6Ka-84-V0F">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="AGs-Jm-Q4K" kind="relationship" relationship="rootViewController" id="eRd-tG-uIM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ywr-yO-B5Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3215.1999999999998" y="956.67166416791611"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Target" width="119" height="163"/>
+    </resources>
+</document>

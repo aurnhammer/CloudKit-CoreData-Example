@@ -1,0 +1,40 @@
+
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" creator="Adze - http://kobotsw.com/apps/adze" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+    <metadata>
+    </metadata>
+    <wpt lon="-74.017011" lat="40.709114">
+        <time>2016-04-30T20:28:00Z</time>
+        <name>Untitled Track</name>
+    </wpt>
+    <wpt lon="-74.016117" lat="40.708829">
+        <time>2016-04-30T20:28:10Z</time>
+        <name>Untitled Track</name>
+    </wpt>
+    <wpt lon="-74.015931" lat="40.709129">
+        <time>2016-04-30T20:28:15Z</time>
+        <name>Untitled Track</name>
+    </wpt>
+    <wpt lat="40.709757" lon="-74.015438">
+        <time>2016-04-30T20:28:25Z</time>
+    </wpt>
+    
+    <wpt lon="-74.015931" lat="40.709129">
+        <time>2016-04-30T20:28:35Z</time>
+        <name>Untitled Track</name>
+    </wpt>
+
+    <wpt lon="-74.016695" lat="40.709323">
+        <time>2016-04-30T20:28:45Z</time>
+        <name>Untitled Track</name>
+    </wpt>
+     <wpt lon="-74.017804" lat="40.709571">
+        <time>2016-04-30T20:28:50Z</time>
+        <name>Untitled Track</name>
+    </wpt>
+    
+    <wpt lon="-74.0173" lat="40.7093">
+        <time>2016-04-30T20:28:55Z</time>
+        <name>Untitled Track</name>
+    </wpt>
+
+</gpx>

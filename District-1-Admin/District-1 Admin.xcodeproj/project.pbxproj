@@ -1,0 +1,948 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A91FC9BB1E58A4360005DBCF /* Beacons.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91FC9BA1E58A4360005DBCF /* Beacons.storyboard */; };
+		A92B72901F26B06500ABA273 /* BeaconCrawl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92B727B1F26B02200ABA273 /* BeaconCrawl.framework */; };
+		A92B72911F26B0FE00ABA273 /* BeaconCrawl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A92B727B1F26B02200ABA273 /* BeaconCrawl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A92B72991F26C8AD00ABA273 /* BeaconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92B72981F26C8AD00ABA273 /* BeaconsViewController.swift */; };
+		A92B729D1F26D01000ABA273 /* BeaconsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92B729C1F26D01000ABA273 /* BeaconsDataSource.swift */; };
+		A95F45FB1F28D3DC001FA19F /* BeaconDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95F45FA1F28D3DC001FA19F /* BeaconDetectionViewController.swift */; };
+		A95F46051F28D45B001FA19F /* Detection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A95F46041F28D45B001FA19F /* Detection.storyboard */; };
+		A97710C71DAB1149009469E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97710C61DAB1149009469E0 /* AppDelegate.swift */; };
+		A97710CF1DAB1149009469E0 /* District_1_Admin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A97710CD1DAB1149009469E0 /* District_1_Admin.xcdatamodeld */; };
+		A97710D11DAB1149009469E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A97710D01DAB1149009469E0 /* Assets.xcassets */; };
+		A97710D41DAB1149009469E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A97710D21DAB1149009469E0 /* LaunchScreen.storyboard */; };
+		A97710DF1DAB1149009469E0 /* District_1_AdminTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97710DE1DAB1149009469E0 /* District_1_AdminTests.swift */; };
+		A97710EA1DAB1149009469E0 /* District_1_AdminUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97710E91DAB1149009469E0 /* District_1_AdminUITests.swift */; };
+		A97710F81DAB121E009469E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A97710F71DAB121E009469E0 /* Main.storyboard */; };
+		A97712121DAB15BC009469E0 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97712111DAB15BC009469E0 /* CloudKit.framework */; };
+		A99FCD0F1DD798B6000D82CC /* BeaconDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FCD0E1DD798B6000D82CC /* BeaconDetailViewController.swift */; };
+		A9C56F8C1F466B69008DFDD5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C56F8B1F466B69008DFDD5 /* MapKit.framework */; };
+		A9F71EB91F27D32300E62A3F /* BeaconsDetectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F71EB81F27D32300E62A3F /* BeaconsDetectionDataSource.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A92B727A1F26B02200ABA273 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A92B72751F26B02200ABA273 /* BeaconCrawl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A9FAB2CF1DA95EB200F63E88;
+			remoteInfo = BeaconCrawl;
+		};
+		A92B727C1F26B02200ABA273 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A92B72751F26B02200ABA273 /* BeaconCrawl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A9FAB2D81DA95EB200F63E88;
+			remoteInfo = BeaconCrawlTests;
+		};
+		A97710DB1DAB1149009469E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A97710BB1DAB1149009469E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A97710C21DAB1149009469E0;
+			remoteInfo = "District-1 Admin";
+		};
+		A97710E61DAB1149009469E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A97710BB1DAB1149009469E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A97710C21DAB1149009469E0;
+			remoteInfo = "District-1 Admin";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A97711E81DAB1386009469E0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A92B72911F26B0FE00ABA273 /* BeaconCrawl.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A91FC9BA1E58A4360005DBCF /* Beacons.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Beacons.storyboard; sourceTree = "<group>"; };
+		A92B72751F26B02200ABA273 /* BeaconCrawl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BeaconCrawl.xcodeproj; path = "../BeaconCrawl-Framework/BeaconCrawl.xcodeproj"; sourceTree = "<group>"; };
+		A92B72981F26C8AD00ABA273 /* BeaconsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconsViewController.swift; sourceTree = "<group>"; usesTabs = 1; };
+		A92B729C1F26D01000ABA273 /* BeaconsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconsDataSource.swift; sourceTree = "<group>"; };
+		A951CD601F811D86001C3E2C /* District-1 Admin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "District-1 Admin.entitlements"; sourceTree = "<group>"; };
+		A95F45FA1F28D3DC001FA19F /* BeaconDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconDetectionViewController.swift; sourceTree = "<group>"; };
+		A95F46041F28D45B001FA19F /* Detection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detection.storyboard; sourceTree = "<group>"; };
+		A9733FBF2199FA800047CE35 /* District-1 Admin Debug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "District-1 Admin Debug.entitlements"; sourceTree = "<group>"; };
+		A9733FC22199FA9F0047CE35 /* District-1 Admin Beta.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "District-1 Admin Beta.entitlements"; sourceTree = "<group>"; };
+		A97710C31DAB1149009469E0 /* District-1 Admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "District-1 Admin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A97710C61DAB1149009469E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A97710CE1DAB1149009469E0 /* District_1_Admin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = District_1_Admin.xcdatamodel; sourceTree = "<group>"; };
+		A97710D01DAB1149009469E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A97710D31DAB1149009469E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A97710D51DAB1149009469E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A97710DA1DAB1149009469E0 /* District-1 AdminTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "District-1 AdminTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A97710DE1DAB1149009469E0 /* District_1_AdminTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = District_1_AdminTests.swift; sourceTree = "<group>"; };
+		A97710E01DAB1149009469E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A97710E51DAB1149009469E0 /* District-1 AdminUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "District-1 AdminUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A97710E91DAB1149009469E0 /* District_1_AdminUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = District_1_AdminUITests.swift; sourceTree = "<group>"; };
+		A97710EB1DAB1149009469E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A97710F71DAB121E009469E0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A97712111DAB15BC009469E0 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		A99FCD0E1DD798B6000D82CC /* BeaconDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconDetailViewController.swift; sourceTree = "<group>"; };
+		A9C56F8B1F466B69008DFDD5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A9CA0D171DAFFE260048FB68 /* District-1 Admin-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "District-1 Admin-Bridging-Header.h"; sourceTree = "<group>"; };
+		A9F71EB81F27D32300E62A3F /* BeaconsDetectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconsDetectionDataSource.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A97710C01DAB1149009469E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A92B72901F26B06500ABA273 /* BeaconCrawl.framework in Frameworks */,
+				A9C56F8C1F466B69008DFDD5 /* MapKit.framework in Frameworks */,
+				A97712121DAB15BC009469E0 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A97710D71DAB1149009469E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A97710E21DAB1149009469E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A92B72761F26B02200ABA273 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A92B727B1F26B02200ABA273 /* BeaconCrawl.framework */,
+				A92B727D1F26B02200ABA273 /* BeaconCrawlTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A95F46031F28D43A001FA19F /* Ranging */ = {
+			isa = PBXGroup;
+			children = (
+				A95F45FA1F28D3DC001FA19F /* BeaconDetectionViewController.swift */,
+				A9F71EB81F27D32300E62A3F /* BeaconsDetectionDataSource.swift */,
+				A95F46041F28D45B001FA19F /* Detection.storyboard */,
+			);
+			name = Ranging;
+			sourceTree = "<group>";
+		};
+		A97710BA1DAB1149009469E0 = {
+			isa = PBXGroup;
+			children = (
+				A97710C51DAB1149009469E0 /* District-1 Admin */,
+				A97710DD1DAB1149009469E0 /* District-1 AdminTests */,
+				A97710E81DAB1149009469E0 /* District-1 AdminUITests */,
+				A97710C41DAB1149009469E0 /* Products */,
+				A97712101DAB15BC009469E0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 1;
+		};
+		A97710C41DAB1149009469E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A97710C31DAB1149009469E0 /* District-1 Admin.app */,
+				A97710DA1DAB1149009469E0 /* District-1 AdminTests.xctest */,
+				A97710E51DAB1149009469E0 /* District-1 AdminUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A97710C51DAB1149009469E0 /* District-1 Admin */ = {
+			isa = PBXGroup;
+			children = (
+				A951CD601F811D86001C3E2C /* District-1 Admin.entitlements */,
+				A9733FBF2199FA800047CE35 /* District-1 Admin Debug.entitlements */,
+				A9733FC22199FA9F0047CE35 /* District-1 Admin Beta.entitlements */,
+				A97710C61DAB1149009469E0 /* AppDelegate.swift */,
+				A97710F71DAB121E009469E0 /* Main.storyboard */,
+				A97711361DAB12EE009469E0 /* Beacons */,
+				A95F46031F28D43A001FA19F /* Ranging */,
+				A977110E1DAB129E009469E0 /* Common */,
+				A97710D01DAB1149009469E0 /* Assets.xcassets */,
+				A97710D21DAB1149009469E0 /* LaunchScreen.storyboard */,
+				A97710D51DAB1149009469E0 /* Info.plist */,
+				A97710CD1DAB1149009469E0 /* District_1_Admin.xcdatamodeld */,
+			);
+			path = "District-1 Admin";
+			sourceTree = "<group>";
+		};
+		A97710DD1DAB1149009469E0 /* District-1 AdminTests */ = {
+			isa = PBXGroup;
+			children = (
+				A97710DE1DAB1149009469E0 /* District_1_AdminTests.swift */,
+				A97710E01DAB1149009469E0 /* Info.plist */,
+			);
+			path = "District-1 AdminTests";
+			sourceTree = "<group>";
+		};
+		A97710E81DAB1149009469E0 /* District-1 AdminUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A97710E91DAB1149009469E0 /* District_1_AdminUITests.swift */,
+				A97710EB1DAB1149009469E0 /* Info.plist */,
+			);
+			path = "District-1 AdminUITests";
+			sourceTree = "<group>";
+		};
+		A977110E1DAB129E009469E0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A9CA0D171DAFFE260048FB68 /* District-1 Admin-Bridging-Header.h */,
+			);
+			name = Common;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A97711361DAB12EE009469E0 /* Beacons */ = {
+			isa = PBXGroup;
+			children = (
+				A91FC9BA1E58A4360005DBCF /* Beacons.storyboard */,
+				A92B72981F26C8AD00ABA273 /* BeaconsViewController.swift */,
+				A92B729C1F26D01000ABA273 /* BeaconsDataSource.swift */,
+				A99FCD0E1DD798B6000D82CC /* BeaconDetailViewController.swift */,
+			);
+			name = Beacons;
+			sourceTree = "<group>";
+		};
+		A97712101DAB15BC009469E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9C56F8B1F466B69008DFDD5 /* MapKit.framework */,
+				A92B72751F26B02200ABA273 /* BeaconCrawl.xcodeproj */,
+				A97712111DAB15BC009469E0 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A97710C21DAB1149009469E0 /* District-1 Admin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A97710EE1DAB1149009469E0 /* Build configuration list for PBXNativeTarget "District-1 Admin" */;
+			buildPhases = (
+				A97710BF1DAB1149009469E0 /* Sources */,
+				A97710C01DAB1149009469E0 /* Frameworks */,
+				A97710C11DAB1149009469E0 /* Resources */,
+				A97711E81DAB1386009469E0 /* CopyFiles */,
+				A94EEA8B219A6EB300976791 /* Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "District-1 Admin";
+			productName = "District-1 Admin";
+			productReference = A97710C31DAB1149009469E0 /* District-1 Admin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A97710D91DAB1149009469E0 /* District-1 AdminTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A97710F11DAB1149009469E0 /* Build configuration list for PBXNativeTarget "District-1 AdminTests" */;
+			buildPhases = (
+				A97710D61DAB1149009469E0 /* Sources */,
+				A97710D71DAB1149009469E0 /* Frameworks */,
+				A97710D81DAB1149009469E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A97710DC1DAB1149009469E0 /* PBXTargetDependency */,
+			);
+			name = "District-1 AdminTests";
+			productName = "District-1 AdminTests";
+			productReference = A97710DA1DAB1149009469E0 /* District-1 AdminTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A97710E41DAB1149009469E0 /* District-1 AdminUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A97710F41DAB1149009469E0 /* Build configuration list for PBXNativeTarget "District-1 AdminUITests" */;
+			buildPhases = (
+				A97710E11DAB1149009469E0 /* Sources */,
+				A97710E21DAB1149009469E0 /* Frameworks */,
+				A97710E31DAB1149009469E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A97710E71DAB1149009469E0 /* PBXTargetDependency */,
+			);
+			name = "District-1 AdminUITests";
+			productName = "District-1 AdminUITests";
+			productReference = A97710E51DAB1149009469E0 /* District-1 AdminUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A97710BB1DAB1149009469E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = beaconcrawl.com;
+				TargetAttributes = {
+					A97710C21DAB1149009469E0 = {
+						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.HotspotConfiguration = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 0;
+							};
+							com.apple.Siri = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					A97710D91DAB1149009469E0 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 444UEHSZ58;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A97710C21DAB1149009469E0;
+					};
+					A97710E41DAB1149009469E0 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 444UEHSZ58;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A97710C21DAB1149009469E0;
+					};
+				};
+			};
+			buildConfigurationList = A97710BE1DAB1149009469E0 /* Build configuration list for PBXProject "District-1 Admin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A97710BA1DAB1149009469E0;
+			productRefGroup = A97710C41DAB1149009469E0 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A92B72761F26B02200ABA273 /* Products */;
+					ProjectRef = A92B72751F26B02200ABA273 /* BeaconCrawl.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				A97710C21DAB1149009469E0 /* District-1 Admin */,
+				A97710D91DAB1149009469E0 /* District-1 AdminTests */,
+				A97710E41DAB1149009469E0 /* District-1 AdminUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A92B727B1F26B02200ABA273 /* BeaconCrawl.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BeaconCrawl.framework;
+			remoteRef = A92B727A1F26B02200ABA273 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A92B727D1F26B02200ABA273 /* BeaconCrawlTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BeaconCrawlTests.xctest;
+			remoteRef = A92B727C1F26B02200ABA273 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A97710C11DAB1149009469E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A97710F81DAB121E009469E0 /* Main.storyboard in Resources */,
+				A95F46051F28D45B001FA19F /* Detection.storyboard in Resources */,
+				A97710D41DAB1149009469E0 /* LaunchScreen.storyboard in Resources */,
+				A91FC9BB1E58A4360005DBCF /* Beacons.storyboard in Resources */,
+				A97710D11DAB1149009469E0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A97710D81DAB1149009469E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A97710E31DAB1149009469E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A94EEA8B219A6EB300976791 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#!/bin/bash\n#  update_build_number.sh\n#  Usage: `update_build_number.sh [branch]`\n#  Run this script after the 'Copy Bundle Resources' build phase\n#  Ref: http://tgoode.com/2014/06/05/sensible-way-increment-bundle-version-cfbundleversion-xcode/\nbranch=${1:-'develop'}\nbuildNumber=$(expr $(git rev-list $branch --count) - $(git rev-list HEAD..$branch --count))\necho \"Updating build number to $buildNumber using branch '$branch'.\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nif [ -f \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}.dSYM/Contents/Info.plist\" ]; then\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}.dSYM/Contents/Info.plist\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A97710BF1DAB1149009469E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A97710CF1DAB1149009469E0 /* District_1_Admin.xcdatamodeld in Sources */,
+				A92B72991F26C8AD00ABA273 /* BeaconsViewController.swift in Sources */,
+				A95F45FB1F28D3DC001FA19F /* BeaconDetectionViewController.swift in Sources */,
+				A99FCD0F1DD798B6000D82CC /* BeaconDetailViewController.swift in Sources */,
+				A97710C71DAB1149009469E0 /* AppDelegate.swift in Sources */,
+				A92B729D1F26D01000ABA273 /* BeaconsDataSource.swift in Sources */,
+				A9F71EB91F27D32300E62A3F /* BeaconsDetectionDataSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A97710D61DAB1149009469E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A97710DF1DAB1149009469E0 /* District_1_AdminTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A97710E11DAB1149009469E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A97710EA1DAB1149009469E0 /* District_1_AdminUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A97710DC1DAB1149009469E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A97710C21DAB1149009469E0 /* District-1 Admin */;
+			targetProxy = A97710DB1DAB1149009469E0 /* PBXContainerItemProxy */;
+		};
+		A97710E71DAB1149009469E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A97710C21DAB1149009469E0 /* District-1 Admin */;
+			targetProxy = A97710E61DAB1149009469E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A97710D21DAB1149009469E0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A97710D31DAB1149009469E0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9733FC32199FCC80047CE35 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Beta;
+		};
+		A9733FC42199FCC80047CE35 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APP_DISPLAY_NAME = "D-1 Admin Beta";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "District-1 Admin/District-1 Admin Beta.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 444UEHSZ58;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				INFOPLIST_FILE = "District-1 Admin/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "-Xfrontend -debug-time-function-bodies";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.districtapp.CloudKit-CoreData";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = BETA;
+				SWIFT_OBJC_BRIDGING_HEADER = "District-1 Admin-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Beta;
+		};
+		A9733FC52199FCC80047CE35 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 444UEHSZ58;
+				INFOPLIST_FILE = "District-1 AdminTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.beaconcrawl.District-1-AdminTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/District-1 Admin.app/District-1 Admin";
+			};
+			name = Beta;
+		};
+		A9733FC62199FCC80047CE35 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 444UEHSZ58;
+				INFOPLIST_FILE = "District-1 AdminUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.beaconcrawl.District-1-AdminUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = "District-1 Admin";
+			};
+			name = Beta;
+		};
+		A97710EC1DAB1149009469E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A97710ED1DAB1149009469E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A97710EF1DAB1149009469E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APP_DISPLAY_NAME = "D-1 Admin Debug";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "District-1 Admin/District-1 Admin Debug.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 444UEHSZ58;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				INFOPLIST_FILE = "District-1 Admin/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "-Xfrontend -debug-time-function-bodies";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.districtapp.CloudKit-CoreData";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OBJC_BRIDGING_HEADER = "District-1 Admin-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A97710F01DAB1149009469E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APP_DISPLAY_NAME = "D-1 Admin";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "District-1 Admin/District-1 Admin.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 444UEHSZ58;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				INFOPLIST_FILE = "District-1 Admin/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "-Xfrontend -debug-time-function-bodies";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.districtapp.CloudKit-CoreData";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "District-1 Admin-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A97710F21DAB1149009469E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 444UEHSZ58;
+				INFOPLIST_FILE = "District-1 AdminTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.beaconcrawl.District-1-AdminTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/District-1 Admin.app/District-1 Admin";
+			};
+			name = Debug;
+		};
+		A97710F31DAB1149009469E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 444UEHSZ58;
+				INFOPLIST_FILE = "District-1 AdminTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.beaconcrawl.District-1-AdminTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/District-1 Admin.app/District-1 Admin";
+			};
+			name = Release;
+		};
+		A97710F51DAB1149009469E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 444UEHSZ58;
+				INFOPLIST_FILE = "District-1 AdminUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.beaconcrawl.District-1-AdminUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = "District-1 Admin";
+			};
+			name = Debug;
+		};
+		A97710F61DAB1149009469E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 444UEHSZ58;
+				INFOPLIST_FILE = "District-1 AdminUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.beaconcrawl.District-1-AdminUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = "District-1 Admin";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A97710BE1DAB1149009469E0 /* Build configuration list for PBXProject "District-1 Admin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A97710EC1DAB1149009469E0 /* Debug */,
+				A97710ED1DAB1149009469E0 /* Release */,
+				A9733FC32199FCC80047CE35 /* Beta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A97710EE1DAB1149009469E0 /* Build configuration list for PBXNativeTarget "District-1 Admin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A97710EF1DAB1149009469E0 /* Debug */,
+				A97710F01DAB1149009469E0 /* Release */,
+				A9733FC42199FCC80047CE35 /* Beta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A97710F11DAB1149009469E0 /* Build configuration list for PBXNativeTarget "District-1 AdminTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A97710F21DAB1149009469E0 /* Debug */,
+				A97710F31DAB1149009469E0 /* Release */,
+				A9733FC52199FCC80047CE35 /* Beta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A97710F41DAB1149009469E0 /* Build configuration list for PBXNativeTarget "District-1 AdminUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A97710F51DAB1149009469E0 /* Debug */,
+				A97710F61DAB1149009469E0 /* Release */,
+				A9733FC62199FCC80047CE35 /* Beta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A97710CD1DAB1149009469E0 /* District_1_Admin.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A97710CE1DAB1149009469E0 /* District_1_Admin.xcdatamodel */,
+			);
+			currentVersion = A97710CE1DAB1149009469E0 /* District_1_Admin.xcdatamodel */;
+			path = District_1_Admin.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A97710BB1DAB1149009469E0 /* Project object */;
+}

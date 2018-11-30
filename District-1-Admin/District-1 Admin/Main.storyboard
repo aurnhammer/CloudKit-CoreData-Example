@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ojs-O5-1UI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="hK2-1K-4Ln">
+            <objects>
+                <tabBarController storyboardIdentifier="Detection" automaticallyAdjustsScrollViewInsets="NO" id="ojs-O5-1UI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" clipsSubviews="YES" contentMode="scaleToFill" translucent="NO" id="KNU-J6-TtX">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="MgO-bo-6ut"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.66666666669999997" green="0.015686274510000001" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <connections>
+                        <segue destination="X4Q-VR-hng" kind="relationship" relationship="viewControllers" id="d71-0d-0jo"/>
+                        <segue destination="tQV-Js-sUi" kind="relationship" relationship="viewControllers" id="sqs-ad-njJ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I96-ca-XNV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="922" y="-1046"/>
+        </scene>
+        <!--Beacons-->
+        <scene sceneID="eET-qO-jcR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Beacons" id="X4Q-VR-hng" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Beacons" image="Beacons" selectedImage="Beacons" id="fSe-MT-OJN"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DDP-Sm-Cm1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="595" y="-429"/>
+        </scene>
+        <!--Detection-->
+        <scene sceneID="A3j-8H-KK9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Detection" id="tQV-Js-sUi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Ranging" image="iBeacon" selectedImage="iBeacon" id="NRE-MQ-69T"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jc1-aN-CYL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1294" y="-429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Beacons" width="27" height="28"/>
+        <image name="iBeacon" width="30" height="32"/>
+    </resources>
+    <color key="tintColor" red="0.66666666669999997" green="0.015686274510000001" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+</document>

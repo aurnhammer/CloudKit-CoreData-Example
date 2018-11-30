@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ONd-k4-xbe">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ranging-->
+        <scene sceneID="FZc-3A-Vem">
+            <objects>
+                <collectionViewController id="z8p-8X-tw0" customClass="BeaconDetectionViewController" customModule="District_1_Admin" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="xsq-16-4ga">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hfh-9t-fH9">
+                            <size key="itemSize" width="366" height="80"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="vlY-1x-yEL" customClass="BaseCollectionViewCell" customModule="BeaconCrawl">
+                                <rect key="frame" x="27.5" y="0.0" width="320" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView verifyAmbiguity="off" opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacingType="standard" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WRi-pq-BTO">
+                                            <rect key="frame" x="0.0" y="0.0" width="274" height="60"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2Ny-J2-kHt">
+                                                    <rect key="frame" x="0.0" y="0.0" width="61.5" height="48"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feE-qC-b14">
+                                                            <rect key="frame" x="0.0" y="0.0" width="61.5" height="24"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFQ-y3-FTp">
+                                                            <rect key="frame" x="0.0" y="24" width="61.5" height="24"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWW-WA-rJz">
+                                                    <rect key="frame" x="69.5" y="0.0" width="218.5" height="48"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="169" id="xue-xd-vIZ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="xue-xd-vIZ"/>
+                                                        </mask>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="WRi-pq-BTO" secondAttribute="bottom" constant="16" id="9v0-zk-hZn"/>
+                                    <constraint firstItem="WRi-pq-BTO" firstAttribute="top" secondItem="vlY-1x-yEL" secondAttribute="top" constant="16" id="KxS-p9-rRw"/>
+                                    <constraint firstItem="WRi-pq-BTO" firstAttribute="leading" secondItem="vlY-1x-yEL" secondAttribute="leading" constant="16" id="mB8-Pn-0ar"/>
+                                    <constraint firstAttribute="trailing" secondItem="WRi-pq-BTO" secondAttribute="trailing" constant="16" id="wwM-Pt-XI1"/>
+                                </constraints>
+                                <size key="customSize" width="320" height="80"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="accuracyLabel" destination="lWW-WA-rJz" id="I13-7q-urd"/>
+                                    <outlet property="detailLabel" destination="CFQ-y3-FTp" id="sC4-6s-K77"/>
+                                    <outlet property="titleLabel" destination="feE-qC-b14" id="fLm-jD-RVj"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="z8p-8X-tw0" id="obC-ap-r6M"/>
+                            <outlet property="delegate" destination="z8p-8X-tw0" id="aJT-kD-GHw"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Ranging" id="VLU-LC-o8T"/>
+                    <connections>
+                        <outlet property="flowLayout" destination="hfh-9t-fH9" id="zvc-wa-1JS"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nVQ-zZ-9um" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="536.79999999999995" y="168.6656671664168"/>
+        </scene>
+        <!--Ranging-->
+        <scene sceneID="Mlp-if-T0A">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ONd-k4-xbe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Ranging" image="iBeacon" selectedImage="iBeacon" id="2A2-oU-L3L"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Gf-bq-77V">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="z8p-8X-tw0" kind="relationship" relationship="rootViewController" id="TMK-uL-5hI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KDy-M5-MEt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-255" y="169"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iBeacon" width="30" height="32"/>
+    </resources>
+</document>

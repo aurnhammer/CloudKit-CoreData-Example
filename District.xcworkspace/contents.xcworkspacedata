@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:District-1-Admin/District-1 Admin.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BeaconCrawl-Framework/BeaconCrawl.xcodeproj">
+   </FileRef>
+</Workspace>

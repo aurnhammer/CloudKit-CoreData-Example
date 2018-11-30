@@ -1,0 +1,13 @@
+//
+//  FriendEntity.swift
+//  BeaconCrawl
+//
+//  Created by WCA on 2/26/17.
+//  Copyright © 2017 aurnhammer.com. All rights reserved.
+//
+
+import GameplayKit
+
+@objc open class FriendEntity: GKEntity {
+    
+}
