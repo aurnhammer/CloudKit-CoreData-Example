@@ -11,6 +11,6 @@ From the List choose the "+" button which will bring you to the Beacon Detail. H
 
 Run the app on more than one device. Enable an iBeacon simulation from the Detail View using the "Enabled" button. The Ranging Tab shows the iBeacons that have been detected. If you have multiple devices simulating iBeacons they will appear in the list sorted by distance.
 
-Play around with positioning the beacons changing their names and adding new ones. Depending on your connection the changes should be reflected fairly quickly on the other device. If a device is offline (for example airplane mode) the changes will reflect one the device comes back online.
+Play around with positioning the beacons changing their names and adding new ones. Depending on your connection the changes should be reflected fairly quickly on the other device. If a device is offline (for example airplane mode) the changes will reflect once the device comes back online.
 
 
